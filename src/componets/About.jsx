@@ -14,9 +14,7 @@ export default function About() {
                     Our team ensures transparency, reliability, and affordability in every step of the process.
                     Whether you're looking for your dream home or an investment opportunity, we have you covered.
                 </p>
-                <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700">
-                    Learn More
-                </button>
+                
             </div>
         </div>
     )

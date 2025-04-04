@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+    const navigate = useNavigate();
     return (
 
         <section className="relative w-full bg-gray-100 py-16 px-6 text-center">
@@ -33,6 +35,13 @@ export default function Hero() {
                 <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700">
                     Search
                 </button>
+
+
+                <button onClick={() =>
+                    (window.location.href = "http://127.0.0.1:5500/medi/src/AI/index.html")
+                } className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700">
+                    Instant Cure
+                </button>
             </div>
 
             {/* Illustration Placeholder */}
@@ -52,8 +61,8 @@ export default function Hero() {
                 </p>
 
 
-                    
-                <div className="flex justify-center  mt-10 items-center">
+
+                <div className="flex justify-center mt-10 items-center">
                     {/* Service 1 */}
                     <div className="bg-white p-6 rounded-xl shadow-lg mr-16 text-center">
                         <div className="text-blue-600 mb-4">
@@ -63,7 +72,7 @@ export default function Hero() {
                         <p className="mt-2 text-gray-600">
                             We are here to help you find the right medicine for your needs. You can donate us any medicine that you don't need or expired.
                         </p>
-                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Donate Us</button>
+                        <button onClick={() => navigate('/donations')} className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Donate Us</button>
                     </div>
 
                     {/* Service 2 */}
@@ -75,12 +84,17 @@ export default function Hero() {
                         <p className="mt-2 text-gray-600">
                             Find the nearest donation center to your location. We are here to help you find the right medicine for your needs.
                         </p>
-                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Find</button>
+                        <button
+                            className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700"
+                            onClick={() => navigate('/donation-center')}
+                        >
+                            Find
+                        </button>
                     </div>
 
-                    
+
                 </div>
-                </div>
+            </div>
 
         </section>
     )
