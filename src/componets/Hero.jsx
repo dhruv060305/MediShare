@@ -19,7 +19,7 @@ export default function Hero() {
                     {/* Location Input */}
                     <input
                         type="text"
-                        placeholder="Search for a location..."
+                        placeholder="Search for a Medicines..."
                         className="w-full outline-none px-2 py-2 text-gray-700"
                     />
                     {/* Budget Dropdown */}
@@ -53,7 +53,7 @@ export default function Hero() {
 
 
                     
-                <div className="flex justify-center mt-10 items-center">
+                <div className="flex justify-center  mt-10 items-center">
                     {/* Service 1 */}
                     <div className="bg-white p-6 rounded-xl shadow-lg mr-16 text-center">
                         <div className="text-blue-600 mb-4">

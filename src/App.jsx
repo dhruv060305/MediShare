@@ -1,7 +1,7 @@
 import './App.css'
 import Nav from './componets/Nav'
 import Hero from './componets/Hero'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from './componets/About'
 
 
 
@@ -12,10 +12,9 @@ function App() {
     <>
 
 
-
-
       <Nav/>
       <Hero></Hero>
+      <About/>
     </>
     
   
