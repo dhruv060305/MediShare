@@ -57,25 +57,25 @@ export default function Hero() {
                     {/* Service 1 */}
                     <div className="bg-white p-6 rounded-xl shadow-lg mr-16 text-center">
                         <div className="text-blue-600 mb-4">
-                            <img src="/service-icon1.png" alt="Fixed Fee & Support" className="w-16 mx-auto" />
+                            <img src="./src/Assets/Donate.jpg" alt="Fixed Fee & Support" className="w-50 rounded mx-auto" />
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800">Fixed Fee & Support</h3>
+                        <h3 className="text-xl font-semibold text-gray-800">Donate Us</h3>
                         <p className="mt-2 text-gray-600">
-                            You’ll only pay once, and it’s fixed from the beginning. There are no surprises, and we never add commission.
+                            We are here to help you find the right medicine for your needs. You can donate us any medicine that you don't need or expired.
                         </p>
-                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Read More</button>
+                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Donate Us</button>
                     </div>
 
                     {/* Service 2 */}
                     <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                         <div className="text-blue-600 mb-4">
-                            <img src="/service-icon2.png" alt="Local Estate Agents" className="w-16 mx-auto" />
+                            <img src="./src/Assets/medicines.jpg" alt="Local Estate Agents" className="w-50 rounded mx-auto" />
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800">Local Estate Agents</h3>
+                        <h3 className="text-xl font-semibold text-gray-800">Donation Center Near-By</h3>
                         <p className="mt-2 text-gray-600">
-                            Your dedicated local estate agent and their team of property experts will be with you every step until your home is sold.
+                            Find the nearest donation center to your location. We are here to help you find the right medicine for your needs.
                         </p>
-                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Read More</button>
+                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Find</button>
                     </div>
 
                     

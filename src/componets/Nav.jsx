@@ -5,7 +5,7 @@ export default function Nav() {
 
     return (
         <div className="nav-box">
-            <nav className="bg-white-400 text-black p-3 ">
+            <nav className="bg-white-400 text-black  p-3 ">
                 <div className="container flex justify-between items-center mx-auto">
                     {/* Logo */}
                     <a href="/" className="flex items-center space-x-2">
