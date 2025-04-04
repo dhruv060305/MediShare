@@ -5,7 +5,7 @@ export default function Nav() {
 
     return (
         <div className="nav-box">
-            <nav className="bg-white-400 text-black border-b-2 p-3 ">
+            <nav className="bg-white-400 text-black p-3 ">
                 <div className="container flex justify-between items-center mx-auto">
                     {/* Logo */}
                     <a href="/" className="flex items-center space-x-2">
@@ -17,11 +17,12 @@ export default function Nav() {
                     <div className="hidden md:flex space-x-5">
                         <div className="flex space-x-5 justify-items-center items-center">
                         <a href="/" className="hover:font-bold">Home</a>
-                        <a href="/" className="hover:font-bold">Case Studies</a>
-                        <a href="/" className="hover:font-bold">Testimonials</a>
-                        <a href="/" className="hover:font-bold">Recent Work</a>
+                        <a href="/" className="hover:font-bold">Donations</a>
+                        <a href="/" className="hover:font-bold">Dontion Center</a>
+                        <a href="/" className="hover:font-bold">About Us</a>
+                        <a href="/" className="hover:font-bold">Login</a>
                         </div>
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Get In Touch</button>
+                        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Sign-Up For Free</button>
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -35,12 +36,13 @@ export default function Nav() {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden flex flex-col items-center space-y-4 bg-gray-800 p-4 mt-2 rounded">
+                    <div className="md:hidden flex flex-col items-center space-y-4 bg-white-400 p-4 mt-2 rounded">
                         <a href="/" className="hover:font-bold">Home</a>
-                        <a href="/" className="hover:font-bold">Case Studies</a>
-                        <a href="/" className="hover:font-bold">Testimonials</a>
-                        <a href="/" className="hover:font-bold">Recent Work</a>
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Get In Touch</button>
+                        <a href="/" className="hover:font-bold">Donations</a>
+                        <a href="/" className="hover:font-bold">Donation Center</a>
+                        <a href="/" className="hover:font-bold">About Us</a>
+                        <a href="/" className="hover:font-bold">Login</a>
+                        <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Sign-Up</button>
                     </div>
                 )}
             </nav>
