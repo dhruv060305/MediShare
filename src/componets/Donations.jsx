@@ -17,21 +17,26 @@ export default function Donations() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form Submitted:", formData);
-        alert("Form Submitted Successfully!");
-        setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            address: "",
-            city: "",
-            state: "",
-            medicineName: "",
-            quantity: "",
-            expiryDate: "",
-        });
+    
+        try {
+            const res = await fetch("http://localhost:5000/api/form", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+    
+            if (res.ok) {
+                alert("✅ Form Submitted Successfully!");
+                setFormData({ ...initialFormState }); // reset form
+            } else {
+                alert("❌ Error while submitting");
+            }
+        } catch (error) {
+            console.error("❌ Error:", error);
+            alert("❌ Error while submitting");
+        }
     };
 
     return (

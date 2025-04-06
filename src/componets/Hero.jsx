@@ -62,9 +62,9 @@ export default function Hero() {
 
 
 
-                <div className="flex justify-center mt-10 items-center">
+                <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 mt-10 items-center">
                     {/* Service 1 */}
-                    <div className="bg-white p-6 rounded-xl shadow-lg mr-16 text-center">
+                    <div className="bg-white p-6 rounded-xl shadow-lg text-center">
                         <div className="text-blue-600 mb-4">
                             <img src="./src/Assets/Donate.jpg" alt="Fixed Fee & Support" className="w-50 rounded mx-auto" />
                         </div>
